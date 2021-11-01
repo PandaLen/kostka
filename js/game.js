@@ -49,6 +49,6 @@ function hod() {
     document.getElementById('result').innerHTML += 
         '<p>Nejvyšší hod: ' + maximum(hody) + '</p>';
     document.getElementById('result').innerHTML += 
-        '<p>Nejvyšší hod: ' + minimum(hody) + '</p>';
+        '<p>Nejmenší hod: ' + minimum(hody) + '</p>';
     return h;
 }
