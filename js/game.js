@@ -1,6 +1,6 @@
 var hody = [];
 var roll = new Audio();
-roll.src = "/media/dice.mp3";
+roll.src = "./media/dice.mp3";
 var zamknuti = 0;
 
 document.getElementById('game').addEventListener('click',
