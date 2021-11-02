@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="disco">
         <h1 class="text-center display-2">Kostka</h1>
     </header>
     <main>
@@ -31,28 +31,45 @@
         <figure>
             <img id="cube" src="img/kostka6.png" alt="Kostka">
         </figure>
+        <figure>
+            <img id="cube2" src="img/kostka6.png" alt="Kostka">
+        </figure>
         </div>
         <div id="cheat">
-            <form action="">
-                <label class="boo" for="kod">Weeee</label><br>
-                <input type="text" id="kod" name="kod" placeholder="Zadejte magický kód"><br><br>
-                <input type="submit" value="Potvrdit">
+            <form autocomplete="off" name="magie" onsubmit="validateForm(); fun(); return false">
+                <label class="mag" for="kod"><b>Magické textové pole</b></label><br>
+                <input class="vstup" type="text" id="kod" name="kod" placeholder="Zadejte magický kód"><br><br>
+                <input class="potvrdit" id="disco2" type="submit" value="Potvrdit">
+            </form>
+        </div>
+        <div id="bid">
+            <form name="sazka" onsubmit="saveBid(); return false">
+                <label class="sazkaNadpis" for="typ"><b>Vsaďte si</b></label><br>
+                <select class="sazka" name="typ" id="typ">
+                    <option>Nižší než 7</option>
+                    <option>Vyšší než 7</option>
+                    <option>Rovné 7</option>
+                </select><br><br>
+                <input class="potvrdit2" id="disco4" type="submit" value="Potvrdit Sázku">
             </form>
         </div>
         <div>
         <div id="result" class="boo">
             <p>Hod: 0</p>
             <p>Počet hodů: 0</p>
-            <p>Součet hodů: 0</p>
             <p>Průměr hodů: 0</p>
             <p>Nejvyšší hod: 0</p>
             <p>Nejmenší hod: 0</p>
+            <p><b>Součet hodů: 0</b></p>
         </div>
         <button class="glow-on-hover" id="game"><i class="fas fa-dice"></i> Hraj <i class="fas fa-dice"></i></button>
         </div>
+        <div id="vysledek">
+            
+        </div>
     </div>
     </main>
-    <footer class="fixed-bottom">
+    <footer class="fixed-bottom" id="disco3">
         <p class="text-center">&copy; Lukáš Kanovský, IT2</p>
     </footer>
 
