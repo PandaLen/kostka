@@ -12,6 +12,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="64x64">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,10 +29,10 @@
     <main>
     <div class="container">
         <div>
-        <figure>
+        <figure class="duhaKostka">
             <img id="cube" src="img/kostka6.png" alt="Kostka">
         </figure>
-        <figure>
+        <figure class="duhaKostka">
             <img id="cube2" src="img/kostka6.png" alt="Kostka">
         </figure>
         </div>
@@ -44,7 +45,7 @@
         </div>
         <div id="bid">
             <form name="sazka" onsubmit="saveBid(); return false">
-                <label class="sazkaNadpis" for="typ"><b>Vsaďte si</b></label><br>
+                <label class="sazkaNadpis" for="typ"><b>Vsaďte si na součet</b></label><br>
                 <select class="sazka" name="typ" id="typ">
                     <option>Nižší než 7</option>
                     <option>Vyšší než 7</option>

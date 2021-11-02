@@ -2,11 +2,13 @@ var hody = [];
 var roll = new Audio();
 roll.src = "media/dice.mp3";
 var lose = new Audio();
-lose.src = "media/lose.mp3"
+lose.src = "media/lose.mp3";
 var win = new Audio();
-win.src = "media/win.mp3"
+win.src = "media/win.mp3";
 var noBid = new Audio();
-noBid.src = "media/bezsazky.mp3"
+noBid.src = "media/bezsazky.mp3";
+var cg = new Audio();
+cg.src = "media/cg.mp3";
 var zamknuti = 0;
 let sum;
 let bid = null;
@@ -129,7 +131,7 @@ function validateBids() {
 
 function fun() {
     let doc = document.forms["magie"]["kod"].value;
-    if (doc.toLowerCase() == "duha" || doc.toLowerCase() == "rainbow") {
+    if (doc.toLowerCase() == "duha" || doc.toLowerCase() == "rainbow" || doc.toLowerCase() == "barvičky") {
         document.getElementById('disco').classList.add('duha');
         document.getElementById('disco2').classList.add('duha');
         document.getElementById('disco3').classList.add('duha');
@@ -137,7 +139,14 @@ function fun() {
         document.getElementById('game').classList.add('duha');
         document.getElementById('cube').classList.add('duhacube');
         document.getElementById('cube2').classList.add('duhacube');
-    } else if (doc.toLowerCase() == "erik" || doc.toLowerCase() == "erik corporated" || doc.toLowerCase() == "rick") {
-        //udělat skin erik kostky
+    } else if (doc.toLowerCase() == "dvojník" || doc.toLowerCase() == "dvojnik") {
+        open("https://youtu.be/ntin_xPSrbM", "_blank");
+    } else if (doc.toLowerCase() == "godomat" || doc.toLowerCase() == "godo mat") {
+        open("https://r1ckyy.github.io/Hazardni-hra/", "_blank");
+    } else if (doc.toLowerCase() == "výhra" || doc.toLowerCase() == "win" || doc.toLowerCase() == "vyhraj" || doc.toLowerCase() == "rig"){
+        cg.play();
+        cg.loop = true;
+        document.body.innerHTML = `<h1 class="cg"><b>Congratulations</b></h1>`;
+        document.body.classList.add("cg2");
     }
 }
