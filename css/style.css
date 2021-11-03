@@ -124,6 +124,12 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
+.smile {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .cg {
     position: absolute;
     font-size: 150px;

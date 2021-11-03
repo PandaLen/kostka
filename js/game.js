@@ -151,5 +151,9 @@ function fun() {
         document.body.classList.add("cg2");
     } else if (doc == "69"){
         nice.play();
+    } else if (doc == ":)"){
+        document.body.innerHTML = ``;
+        document.body.innerHTML += `<img src="img/smile.png" alt="smile">`;
+        document.body.classList.add("smile");
     }
 }
