@@ -9,6 +9,9 @@ var noBid = new Audio();
 noBid.src = "media/bid.mp3";
 var cg = new Audio();
 cg.src = "media/cg.mp3";
+var nice = new Audio();
+nice.src = "media/nice.mp3";
+
 var zamknuti = 0;
 let sum;
 let bid = null;
@@ -68,9 +71,7 @@ function hod() {
         var h = Math.ceil(Math.random() * 6);
         hody.push(h);
         document.getElementById('cube').src = 'img/kostka' + h + '.png';
-        document.getElementById('result').innerHTML = '<p>Hod: ' + h + '</p>';
-        document.getElementById('result').innerHTML +=
-            '<p>Počet hodů: ' + hody.length + '</p>';
+        document.getElementById('result').innerHTML = '<p><b>Statistiky:</b></p>';
         document.getElementById('result').innerHTML +=
             '<p>Průměr hodů: ' + average(suma(hody), hody.length) + '</p>';
         document.getElementById('result').innerHTML +=
@@ -139,7 +140,7 @@ function fun() {
         document.getElementById('game').classList.add('duha');
         document.getElementById('cube').classList.add('duhacube');
         document.getElementById('cube2').classList.add('duhacube');
-    } else if (doc.toLowerCase() == "dvojník" || doc.toLowerCase() == "dvojnik") {
+    } else if (doc.toLowerCase() == "dvojník" || doc.toLowerCase() == "dvojnik" ||doc.toLowerCase() == "godo") {
         open("https://youtu.be/ntin_xPSrbM", "_blank");
     } else if (doc.toLowerCase() == "godomat" || doc.toLowerCase() == "godo mat") {
         open("https://r1ckyy.github.io/Hazardni-hra/", "_blank");
@@ -148,5 +149,7 @@ function fun() {
         cg.loop = true;
         document.body.innerHTML = `<h1 class="cg"><b>Congratulations</b></h1>`;
         document.body.classList.add("cg2");
+    } else if (doc == "69"){
+        nice.play();
     }
 }
