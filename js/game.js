@@ -144,7 +144,7 @@ function fun() {
         document.getElementById('cube2').classList.add('duhacube');
     } else if (doc.toLowerCase() == "dvojník" || doc.toLowerCase() == "dvojnik" ||doc.toLowerCase() == "godo") {
         open("https://youtu.be/ntin_xPSrbM", "_blank");
-    } else if (doc.toLowerCase() == "godomat" || doc.toLowerCase() == "godo mat") {
+    } else if (doc.toLowerCase() == "godomat" || doc.toLowerCase() == "godo mat" || doc.toLowerCase() == "erik") {
         open("https://r1ckyy.github.io/Hazardni-hra/", "_blank");
     } else if (doc.toLowerCase() == "výhra" || doc.toLowerCase() == "win" || doc.toLowerCase() == "vyhraj" || doc.toLowerCase() == "rig"){
         cg.play();
@@ -161,5 +161,7 @@ function fun() {
         kostka.play();
         document.getElementById('cube').src = 'img/noMinecraft.png';
         document.getElementById('cube2').src = 'img/noMinecraft.png';
+    } else if (doc.toLowerCase() == "suspect" ||doc.toLowerCase() == "sus" ||doc.toLowerCase() == "michal"){
+        open("https://michaelmeinhard.github.io/Hazardn-hra/", "_blank");
     }
 }
