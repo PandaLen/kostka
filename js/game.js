@@ -11,6 +11,8 @@ var cg = new Audio();
 cg.src = "media/cg.mp3";
 var nice = new Audio();
 nice.src = "media/nice.mp3";
+var kostka = new Audio();
+kostka.src = "media/noItsNotMinecraft.mp3";
 
 var zamknuti = 0;
 let sum;
@@ -155,5 +157,9 @@ function fun() {
         document.body.innerHTML = ``;
         document.body.innerHTML += `<img src="img/smile.png" alt="smile">`;
         document.body.classList.add("smile");
+    } else if (doc.toLowerCase() == "kostka" || doc.toLowerCase() == "kostičky" || doc.toLowerCase() == "kosticky" || doc.toLowerCase() == "kostky" || doc.toLowerCase() == "minecraft"){
+        kostka.play();
+        document.getElementById('cube').src = 'img/noMinecraft.png';
+        document.getElementById('cube2').src = 'img/noMinecraft.png';
     }
 }
