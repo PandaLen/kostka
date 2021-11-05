@@ -162,6 +162,6 @@ function fun() {
         document.getElementById('cube').src = 'img/noMinecraft.png';
         document.getElementById('cube2').src = 'img/noMinecraft.png';
     } else if (doc.toLowerCase() == "suspect" ||doc.toLowerCase() == "sus" ||doc.toLowerCase() == "michal"){
-        open("https://michaelmeinhard.github.io/Hazardn-hra/", "_blank");
+        open("https://michaelmeinhard.github.io/Hazardni-hra/", "_blank");
     }
 }
